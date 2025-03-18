@@ -7,16 +7,22 @@ document.getElementById('random').addEventListener('click', function changeColor
 
 //   Switiching Page 
 
-  function goToPage (id, link){
-    document.getElementById(id).addEventListener('click', function(){
-      window.location.href = link;
-    })
-  }
+  // function goToPage (id, link){
+  //   document.getElementById(id).addEventListener('click', function(){
+  //     window.location.href = link;
+  //   })
+  // }
 
-  goToPage ('discover', 'blogs.html')
-  // goToPage ('back', 'index.html')
+  // goToPage ('discover', 'blogs.html')
+  // // goToPage ('back', 'index.html')
 
 
+
+document.getElementById('discover').addEventListener('click', function(){
+  window.location.href = 'blogs.html';
+})
+
+  
 
 //   Date 
 let date = new Date();
