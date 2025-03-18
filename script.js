@@ -5,6 +5,17 @@ document.getElementById('random').addEventListener('click', function changeColor
     document.getElementById('body').style.background = randomColor
   })
 
+//   Switiching Page 
+
+  document.getElementById('discover').addEventListener('click', function(){
+    window.location.href = "faq.html"
+  })
+  document.getElementById('back').addEventListener('click', function(){
+    window.location.href = "index.html"
+  })
+
+
+
 //   Date 
 let date = new Date();
 document.getElementById('date').textContent = date.toDateString();
@@ -37,6 +48,12 @@ completeTask('meta', 'Add new reaction');
 completeTask('programming-hero', 'Fix Video Loading Issue');
 completeTask('google-llc', 'Integrate AI search');
 completeTask('polygon-tech', 'Review Ami Probashi Site');
+
+// Delete History 
+const container = document.getElementById('activity-container')
+const clearHistory = document.getElementById('clear-history').addEventListener('click', function(){
+    container.innerHTML = '';
+})
 
 
   
