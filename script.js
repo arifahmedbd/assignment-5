@@ -7,12 +7,14 @@ document.getElementById('random').addEventListener('click', function changeColor
 
 //   Switiching Page 
 
-  document.getElementById('discover').addEventListener('click', function(){
-    window.location.href = "faq.html"
-  })
-  document.getElementById('back').addEventListener('click', function(){
-    window.location.href = "index.html"
-  })
+  function goToPage (id, link){
+    document.getElementById(id).addEventListener('click', function(){
+      window.location.href = link;
+    })
+  }
+
+  goToPage ('discover', 'blogs.html')
+  // goToPage ('back', 'index.html')
 
 
 
